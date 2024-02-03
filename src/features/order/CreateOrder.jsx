@@ -105,6 +105,7 @@ export async function action({ request }) {
    */
   const newOrder = await createOrder(order);
 
+  //redirects to the page order with an ID after getting back the newOrder
   return redirect(`/order/${newOrder.id}`);
 }
 
