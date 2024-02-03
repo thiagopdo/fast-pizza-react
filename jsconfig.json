@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "checkJs": false,
-    "jsx": "preserve"
-  }
+    "baseUrl": "./src/**/*",
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "checkJs": false
+  },
+  "include": ["./src"],
+  "exclude": ["./node_modules", "./public"]
 }
