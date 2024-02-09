@@ -10,6 +10,7 @@ function Cart() {
   const cart = useSelector(getCart);
   const dispatch = useDispatch();
 
+  /*if cart is empty return component */
   if (!cart.length) return <EmptyCart />;
 
   return (
